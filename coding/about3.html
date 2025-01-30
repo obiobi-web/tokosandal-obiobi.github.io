@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>OBIOBI.CO</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="logo">OBIOBI.CO</a>
+                <ul>
+                    <li><a href="https://wa.me/+6285770856961?text=apakah produk ini masih ada?"class="btn" >whatsApp</a></li>
+                    <li><a href="http://shopee.co.id/obiobi.co"class="btn" >shoppe</a></li>
+                    <li><a href="https://vt.tokopedia.com/t/ZS6gkKBXR/" class="btn" >tiktok shopp</a></li>
+                </ul>
+            </nav>       
+        </header>
+        <main>
+            <section>
+                <h2>Detail produk</h2>
+                <a href="index.html" class="btn">back home</a>
+            </section>
+            <section class="featured-section">
+            </section>
+
+            <main class="product-selection">
+                <!-- Pilihan Warna -->
+                <div class="product-options">
+                    <h2>Warna Produk</h2>
+                    <div class="color-options">
+                        <img src="foto.14.webp" alt="Warna tan" class="color-image" data-color="tan">
+                        <img src="foto.15.webp" alt="Warna hitam" class="color-image" data-color="hitam">
+                        <img src="foto.16.webp" alt="Warna crem" class="color-image" data-color="crem">
+                    </div>
+                    <p class="selected-color">Warna yang dipilih: <span>Tidak ada</span></p>
+                </div>
+        
+                <!-- Pilihan Ukuran -->
+                <div class="product-options">
+                    <h2>Ukuran Produk</h2>
+                <div class="size-options">
+                    <button class="size-button" data-size="37">37</button>
+                    <button class="size-button" data-size="38">38</button>
+                    <button class="size-button" data-size="39">39</button>
+                    <button class="size-button" data-size="40">40</button>
+                    <button class="size-button" data-size="41">41</button>
+                </div>
+                <p class="selected-size">Ukuran yang dipilih: <span>Tidak ada</span></p>
+            </div>
+        
+                <!-- Tombol Checkout -->
+                <button class="checkout-button" id="checkout-button">Checkout</button>
+            </main>
+        
+            <script>
+                const colorImages = document.querySelectorAll('.color-image');
+                const selectedColor = document.querySelector('.selected-color span');
+                const sizeImages = document.querySelectorAll('.size-image');
+                const selectedSize = document.querySelector('.selected-size span');
+                const checkoutButton = document.getElementById('checkout-button');
+        
+                // Warna Produk
+                colorImages.forEach(image => {
+                    image.addEventListener('click', () => {
+                        selectedColor.textContent = image.getAttribute('data-color');
+                        colorImages.forEach(img => img.classList.remove('selected'));
+                        image.classList.add('selected');
+                    });
+                });
+        
+               // Ukuran Produk
+        const sizeButtons = document.querySelectorAll('.size-button');
+
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                selectedSize.textContent = button.getAttribute('data-size');
+            });
+        });
+               
+        
+                // Checkout
+                checkoutButton.addEventListener('click', () => {
+                    const color = selectedColor.textContent;
+                    const size = selectedSize.textContent;
+        
+                    if (color === "Tidak ada" || size === "Tidak ada") {
+                        alert("Harap pilih warna dan ukuran sebelum checkout!");
+                        return;
+                    }
+        
+                    const phoneNumber = "6285770856961"; // Ganti dengan nomor WhatsApp tujuan
+                    const message = `Halo, saya ingin memesan produk obiobi sandal heels mulles hak tahu tinggi 3 cm kode sandal 04:\n\nWarna: ${color}\nUkuran: ${size}`;
+                    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.location.href = whatsappURL;
+                });
+                // Menutup Modal jika klik di luar modal
+                 window.onclick = function(event) {
+                        if (event.target === addressModal) {
+                            addressModal.style.display = "none";
+                        }
+                    };
+                </script>
+        <footer>
+            <p>PERHATIAN!! kami juga menerima PO grosir dan partai dikarenakan kami produksi langsung dari pengrajin. untuk info lebih lanjut silahkan hubungi admin/hubungi whatsApp. terimakasih haapy shoping</p>
+            <p>&copy; 2025 my landing page by obiobi.co</p>
+        </footer>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p>Follow us on</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <img src="facebook.jpg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <img src="intagram2.jpg" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+                        <img src="tiktok.jpg" alt="TikTok">
+                    </a>
+                    <a href="https://wa.me/628123456789" target="_blank" class="social-icon">
+                        <img src="whatsApp.jpg" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

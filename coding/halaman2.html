@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>OBIOBI.CO</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="logo">OBIOBI.CO</a>
+                <ul>
+                    <li><a href="https://wa.me/+6285770856961?text=apakah produk ini masih ada?"class="btn" >whatsApp</a></li>
+                    <li><a href="http://shopee.co.id/obiobi.co"class="btn" >shoppe</a></li>
+                    <li><a href="https://vt.tokopedia.com/t/ZS6gkKBXR/" class="btn" >tiktok shopp</a></li>
+                </ul>
+            </nav>
+        </header>
+       <main>
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <img src="baner4.jpg" alt="Product 1">
+                </div>
+                <div class="slide">
+                    <img src="banner.jpg" alt="Product 2">
+                </div>
+                <div class="slide">
+                    <img src="banner2.jpg" alt="Product 3">
+                </div>
+                <div class="slide">
+                    <img src="baner4.jpg" alt="Product 4">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const slider = document.getElementById('slider');
+            let currentIndex = 0;
+    
+            function slide() {
+                currentIndex = (currentIndex + 1) % slider.children.length;
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+    
+            setInterval(slide, 3000);
+        </script>
+
+        <section>
+           <h2>Detail produk</h2>
+           <a href="index.html" class="btn">back home</a>
+       </section>
+        <main>
+        <div class="container">
+            <h1 class="product-title">obiobi prouct</h1>
+            <div class="product-images">
+                <img src="foto4.jpg" alt="Gambar Produk 1">
+                <img src="foto5.jpg" alt="Gambar Produk 2">
+                <img src="foto6.jpg" alt="Gambar Produk 3">
+            </div>
+            <p class="product-description">obiobi sandal laura heels tali tinggi 3 cm kode 01</p>
+            <p class="product-price">Rp 99.000</p>
+            <a href="about2.html" class="buy-button">Beli Sekarang</a>
+        </div>
+         </main>
+        <section>
+            <p>.➡️Semua foto produk kami real pict, warna sesuai dengan foto, perlu dijadikan catatan bahwa cahaya dan resolusi layar masing-masing dapat mempengaruhi warna foto. </p>
+            <p>.➡️ Foto produk adalah copyright dari toko kami.</p>
+            <p>.Lihat panduan size agar lebih yakin dengan size pilihanmu ya.</p>
+            <p>.Salah size? Jangan khawatir, kamu bisa tukar dengan syarat dan ketentuan yang berlaku..</p>
+            <p>.Berdasarkan insole / panjang sandal:</p>
+            <p>.36 : 23 cm</p>
+            <p>.37 : 23.5 cm</ [  p>
+            <p>.38 : 24 cm</p>
+            <p>.39 : 24.5 cm </p>
+            <p>.40 : 25 cm</p>
+            <p>.41 : 26 cm</p>
+            <p>⭕ Note :</p>
+            <p>.➡️Ketika barang sampai, jangan lupa untuk membuat VIDEO UNBOXING dengan posisi kemasan produk belum di buka sama sekali.</p>
+            <p>.➡️Video unboxing tersebut berfungsi untuk mengajukan komplain apabila produk yang diterima kurang atau reject, karena ketentuan pengajuan komplain harus dengan menyertakan VIDEO UNBOXING tersebut.
+            </p>
+
+            <p>TERIMA KASIH DAN HAPPY SHOPING</p>
+        </div>
+    </section>
+<footer>
+    <p>PERHATIAN!! kami juga menerima PO grosir dan partai dikarenakan kami produksi langsung dari pengrajin. untuk info lebih lanjut silahkan hubungi admin/hubungi whatsApp. terimakasih haapy shoping</p>
+    <p>&copy; 2025 my landing page by obiobi.co</p>
+</footer>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>Follow us on</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <img src="facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <img src="intagram2.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+                <img src="tiktok.jpg" alt="TikTok">
+            </a>
+            <a href="https://wa.me/628123456789" target="_blank" class="social-icon">
+                <img src="whatsApp.jpg" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

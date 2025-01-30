@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>OBIOBI.CO</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="logo">OBIOBI.CO</a>
+                <ul>
+                    <li><a href="https://wa.me/+6285770856961?text=apakah produk ini masih ada?"class="btn" >whatsApp</a></li>
+                    <li><a href="http://shopee.co.id/obiobi.co"class="btn" >shoppe</a></li>
+                    <li><a href="https://vt.tokopedia.com/t/ZS6gkKBXR/" class="btn" >tiktok shopp</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>selamat datang di halaman produk obiobi</h1>
+                <h2>list produk</h2>
+                <p>Hi!! jika ada yang ingin ditanyakan tentang produk? klik whatsApp admin siap membatu kk!</p>
+            </section>
+
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="banner.jpg" alt="Product 1">
+                    </div>
+                    <div class="slide">
+                        <img src="baner4.jpg" alt="Product 2">
+                    </div>
+                    <div class="slide">
+                        <img src="banner.jpg" alt="Product 3">
+                    </div>
+                    <div class="slide">
+                        <img src="banner2.jpg" alt="Product 4">
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const slider = document.getElementById('slider');
+                let currentIndex = 0;
+        
+                function slide() {
+                    currentIndex = (currentIndex + 1) % slider.children.length;
+                    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+        
+                setInterval(slide, 3000);
+            </script>
+
+            <div>
+                <info class="info">
+                    <h>gratis ongkir!!</h>
+                <info/>
+            </div>
+
+            <div class="product-slider">
+                <div class="product">
+                  <img src="foto1.jpg" alt="Product Image" class="product-image">
+                  <h2 class="product-title">obiobi sandal heels tali blink 3 cm</h2>
+                  <p class="product-price">Rp.99000</p>
+                  <a href="halaman.html">
+                  <button class="order-button">Detail produk</button>
+                  </a>
+                </div>
+                <div class="product">
+                  <img src="id-11134207-7r98u-lnx4thkrfb7gbf@resize_w450_nl.jpg" alt="Product Image" class="product-image">
+                  <h2 class="product-title">obiobi sandal heels hak tahu 3 cm tali</h2>
+                  <p class="product-price">Rp.99000</p>
+                  <a href="halaman1.html">
+                  <button class="order-button">Detail produk</button>
+                </a>
+                </div>
+                <div class="product">
+                  <img src="foto4.jpg" alt="Product Image" class="product-image">
+                  <h2 class="product-title">obiobi laura heels tali blink 3 cm</h2>
+                  <p class="product-price">Rp.99000</p>
+                  <a href="halaman2.html">
+                  <button class="order-button">Detail produk</button>
+                  </a>
+                </div>
+                <div class="product">
+                    <img src="foto7.jpg" alt="Product Image" class="product-image">
+                    <h2 class="product-title">obiobi block heels tali blink 5cm</h2>
+                    <p class="product-price">Rp.99000</p>
+                    <a href="halaman3.html">
+                    <button class="order-button">Detail produk</button>
+                   </a>
+                  </div>
+             </div>    
+              <!-- vidio -->
+            
+                <div class="product-slider">
+                    <div class="product">
+                        <video controls>
+                            <source src="tiktokio.com_KfkbuO7snAYcDHpcjYJr.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="halaman7.html">
+                        <button class="checkout-button">Detail produk</button>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <video controls>
+                            <source src="tiktokio.com_3x9oIldA8Y8BGpaPDQ6u.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="halaman2.html">
+                        <button class="checkout-button">Detail produk</button>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <video controls>
+                            <source src="tiktokio.com_oz3J6X43mcdnLE1cz5KU.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="halaman6.html">
+                        <button class="checkout-button">Detail produk</button>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <video controls>
+                            <source src="tiktokio.com_7ADxlVmeKy2hdOHDmFyO.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <a href="halaman1.html">
+                        <button class="checkout-button">Detail produk</button>
+                       </a>
+                    </div>
+                </div>     
+             <!-- vidio end-->
+
+             <section>
+                <h2>produk lainnya</h2>
+            </section>
+
+                  <!-- produk -->
+                  <div class="container">
+                    <div class="product-images">
+                        <img src="foto20.jpg" alt="Gambar Produk 1">
+                        <img src="foto21.jpg" alt="Gambar Produk 2">
+                        <img src="foto22.jpg" alt="Gambar Produk 3">
+                    </div>
+                    <p class="product-description">obiobi sandal teplek wanita tali blink  kode 008</p>
+                    <p class="product-price">Rp 80.000</p>
+                    <a href="about7.html" class="buy-button">Beli Sekarang</a>
+                </div>
+             <!-- produk -->  
+            
+                    <div class="catalog-container">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <img src="foto.13.webp" alt="Product 1" class="product-image">
+                            <h2 class="product-title">obiobi sandal heels mules tinggi 3 cm</h2>
+                            <p class="product-price">Rp.89000</p>
+                            <a href="halaman4.html">
+                            <button class="checkout-button">Detail produk</button>
+                            </a>
+                        </div>
+                
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <img src="foto10.jpg" alt="Product 2" class="product-image">
+                            <h2 class="product-title">obiobi sandal heels tali tinggi 3 cm</h2>
+                            <p class="product-price">Rp.80000</p>
+                            <a href="halaman5.html">
+                            <button class="checkout-button">Detail produk</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="catalog-container">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <img src="foto17.jpg" alt="Product 1" class="product-image">
+                            <h2 class="product-title">obiobi sandal wanita flat gesper kode 007</h2>
+                            <p class="product-price">Rp.89000</p>
+                            <a href="halaman6.html">
+                            <button class="checkout-button">Detail produk</button>
+                            </a>
+                        </div>
+                
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <img src="foto20.jpg" alt="Product 2" class="product-image">
+                            <h2 class="product-title">obiobi sandal teplek wanita tali blink model 08</h2>
+                            <p class="product-price">Rp.80000</p>
+                            <a href="halaman7.html">
+                            <button class="checkout-button">Detail produk</button>
+                            </a>
+                        </div>
+                    </div>
+                     
+            <footer>
+                <p>PERHATIAN!! kami juga menerima PO grosir dan partai dikarenakan kami produksi langsung dari pengrajin. untuk info lebih lanjut silahkan hubungi admin/hubungi whatsApp. terimakasih haapy shoping</p>
+                <p>&copy; 2025 my landing page by obiobi.co</p>
+            </footer>    
+            
+            <footer class="footer">
+                <div class="footer-container">
+                    <p>Follow us on</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                            <img src="facebook.jpg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                            <img src="intagram2.jpg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+                            <img src="tiktok.jpg" alt="TikTok">
+                        </a>
+                        <a href="https://wa.me/628123456789" target="_blank" class="social-icon">
+                            <img src="whatsApp.jpg" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </main>    
+    </body>
+</html>
